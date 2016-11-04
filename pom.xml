@@ -8,7 +8,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.1.4.RELEASE</version>
+        <version>1.4.1.RELEASE</version>
         <relativePath /> <!-- lookup parent from repository -->
     </parent>
 
@@ -25,7 +25,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <start-class>com.mvmlabs.springboot.Application</start-class>
-        <java.version>1.7</java.version>
+        <java.version>1.8</java.version>
         <main.basedir>${basedir}/../..</main.basedir>
         <m2eclipse.wtp.contextRoot>/</m2eclipse.wtp.contextRoot>
     </properties>
@@ -35,6 +35,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
@@ -49,16 +55,14 @@
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-jasper</artifactId>
-            <scope>provided</scope>
         </dependency>
 
         <!-- Add Apache Tiles into the mix -->
         <dependency>
             <groupId>org.apache.tiles</groupId>
             <artifactId>tiles-jsp</artifactId>
-            <version>3.0.4</version>
+            <version>3.0.7</version>
         </dependency>
-
 
         <dependency>
             <groupId>org.springframework.boot</groupId>

@@ -19,7 +19,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class GreetingController {
 	private Log log = LogFactory.getLog(this.getClass());
 
-    @RequestMapping(value = "/home", method=RequestMethod.GET)
+    @RequestMapping(value = {"/home", "/"}, method=RequestMethod.GET)
 	public String home() {
 	    return "site.homepage";
 	}
